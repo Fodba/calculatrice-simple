@@ -1,4 +1,4 @@
-def division(nombre1: int | float, nombre2: int | float):
+def diviser(nombre1: int | float, nombre2: int | float):
     """Calcule le quotient entre deux nombres.
 
     Args:
