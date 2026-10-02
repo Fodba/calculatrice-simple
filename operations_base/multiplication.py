@@ -1,4 +1,4 @@
-def multiplication(nombre1: int | float, nombre2: int | float):
+def multiplier(nombre1: int | float, nombre2: int | float):
     """Calcule le produit entre deux nombres.
 
     Args:
