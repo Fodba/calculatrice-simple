@@ -1,16 +1,14 @@
-def soustraction(a, b):
-
+def soustraction(nombre1: int|float, nombre2:int|float):
     """Calcule la différence entre deux nombres.
 
     Args:
-        a (int | float): Le nombre duquel on soustrait (le minued).
-        b (int | float): Le nombre à soustraire (le soustrahend).
+        nombre1 (int | float): Le nombre duquel on soustrait (le minued).
+        nombre2 (int | float): Le nombre à soustraire (le soustrahend).
 
     Returns:
-        int | float: La différence entre a et b.
+        int | float: La différence entre nombre1 et nombre2.
     """
-
-    return a - b
+    return nombre1 - nombre2
 
 
 
