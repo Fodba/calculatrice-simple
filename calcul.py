@@ -1,4 +1,19 @@
 
+def modulo(nombre:int) -> bool:
+    """Vérifie si un nombre entier est pair.
+
+    Utilise l'opérateur modulo (`%`) pour déterminer si le reste 
+    de la division par 2 est égal à zéro.
+
+    Args:
+        nombre (int): Le nombre entier à tester.
+
+    Returns:
+        bool: True si le nombre est pair, False s'il est impair.
+    """
+    return nombre % 2 == 0
+
+
 def division(nombre1: int | float, nombre2: int | float):
     """Calcule le quotient entre deux nombres.
 
@@ -59,5 +74,6 @@ def soustraction(nombre1: int|float, nombre2:int|float):
 
 
     
+
 
 
