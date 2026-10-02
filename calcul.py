@@ -1,21 +1,12 @@
 
-def multiplication(a, b):
-   
-    
-
+def multiplication(nombre1: int|float, nombre2: int|float):
     """Calcule le produit entre deux nombres.
 
     Args:
-        a (int | float): Le nombre de base.
-        b (int | float): Le mutiplicateur.
+        nombre1 (int | float): Le nombre de base.
+        nombre2 (int | float): Le mutiplicateur.
 
     Returns:
-        int | float: Le produit entre a et b.
+        int | float: Le produit entre nombre1 et nombre2.
     """
-
-    return a * b
-    
-
-
-
-    
+    return nombre1 * nombre2
