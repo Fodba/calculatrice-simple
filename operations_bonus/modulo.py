@@ -1,4 +1,4 @@
-def moduloer(nombre1: int,nombre2:int) -> bool:
+def moduloer(nombre1: int,nombre2:int) -> int:
     """Vérifie si un nombre entier est pair.
 
     Utilise l'opérateur modulo (`%`) pour déterminer si le reste
@@ -18,4 +18,4 @@ def moduloer(nombre1: int,nombre2:int) -> bool:
     if nombre1 == 0:
         raise ValueError("Division par zéro impossible")
 
-    return nombre1 % nombre2 == 0
+    return nombre1 % nombre2
