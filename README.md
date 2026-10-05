@@ -1,6 +1,4 @@
-# calculatrice-simple
-
-### Brief Métier
+## Brief: Calculatrice Simple
 
 Ce package permet d'effectuer des calculs mathématiques avec les opérations de base et le calcul du reste d'une division.
 
