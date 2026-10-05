@@ -13,10 +13,13 @@ def ouverture():
     Affiche l'en-tête de la calculatrice.
     """
     print(
-        f"{"\n"*10}"
-        f"+{"-"*34}+\n"
-        f"|{"C A L C U L A T R I C E":^34}|\n"
-        f"+{"-"*34}+\n"
+    f"{"\n"*20}"
+    f" ██████|  █████|  ██|      ██████| ██|   ██| ██|       █████| ████████| ██████|  ██|  ██████| ███████|\n"
+    f"██|````` ██|``██| ██|     ██|````` ██|   ██| ██|      ██|``██|```██|``` ██|``██| ██| ██|````` ██|`````\n"
+    f"██|      ███████| ██|     ██|      ██|   ██| ██|      ███████|   ██|    ██████|  ██| ██|      █████|  \n"
+    f"██|      ██|``██| ██|     ██|      ██|   ██| ██|      ██|``██|   ██|    ██|``██| ██| ██|      ██|```  \n"
+    f"`██████| ██|  ██| ███████|`██████| `██████|` ███████| ██|  ██|   ██|    ██|  ██| ██| `██████| ███████|\n"
+    f" ``````` ```  ``` ````````  ``````  ```````  ```````` ```  ```   ```    ```  ``` ```  ``````` ``````` "
     )
 
 
@@ -143,39 +146,44 @@ def affichage_calcul_terminal():
             match choix:
                  
                 case 'A' :
-                        print("\n[ Addition ]\n")
+                        print("\n   [ Addition ]\n")
                         nombres = demande_deux_nombres(float)
                         resultat = oaddi.additionner( *nombres )
                         contexte = ("de la somme", "+")
+                        if nombres[1] < 0 : nombres[1] = f"( {nombres[1]} )"  # Parenthèses pour entourer l'affichage d'une opération par un négatif
                         break
 
                 case 'S' :
-                        print("\n[ Soustraction ]\n")
-                        nombres = demande_deux_nombres(float)   # On récupère une liste, modifiable
+                        print("\n   [ Soustraction ]\n")
+                        nombres = demande_deux_nombres(float)  # On récupère une liste, modifiable
                         resultat = osous.soustraire( *nombres )
                         contexte = ("de la soustraction", "-")
-                        if nombres[1] < 0 : nombres[1] = f"( {nombres[1]} )"  # Parenthèses pour l'affichage de la soustraction par un négatif
+                        if nombres[1] < 0 : nombres[1] = f"( {nombres[1]} )"
                         break
 
                 case 'M' :
-                        print("\n[ Multiplication ]\n")
+                        print("\n   [ Multiplication ]\n")
                         nombres = demande_deux_nombres(float)
                         resultat = omult.multiplier( *nombres )
                         contexte = ("de la multiplication", "*")
+                        if nombres[1] < 0 : nombres[1] = f"( {nombres[1]} )"
+                        
                         break
 
                 case 'D' :
-                        print("\n[ Division ]\n")
+                        print("\n   [ Division ]\n")
                         nombres = demande_deux_nombres(float)
                         resultat = odivi.diviser( *nombres )
                         contexte = ("de la division", "/")
+                        if nombres[1] < 0 : nombres[1] = f"( {nombres[1]} )"
                         break
 
                 case 'R' :
-                        print("\n[ Modulo ]\n")
+                        print("\n   [ Modulo ]\n")
                         nombres = demande_deux_nombres(float)
                         resultat = omodu.moduloer( *nombres )
                         contexte = ("du modulo de", "//")
+                        if nombres[1] < 0 : nombres[1] = f"( {nombres[1]} )"
                         break
 
                 case 'Q' :
