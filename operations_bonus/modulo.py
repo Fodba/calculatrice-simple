@@ -1,18 +1,18 @@
 def moduloer(nombre1: int,nombre2:int) -> int:
-    """Vérifie si un nombre entier est pair.
+    """Donne le reste d'une division entière.
 
-    Utilise l'opérateur modulo (`%`) pour déterminer si le reste
-    de la division par 2 est égal à zéro.
+    Utilise l'opérateur modulo (`%`) pour calculer le reste
+    de la division de deux nombres.
 
     Args:
-        nombre1 (int): Le nombre entier à tester.
+        nombre1 (int): Le nombre à diviser.
         nombre2 (int): Le diviseur de l'opération.
 
     Returns:
-        bool: True si le nombre est pair, False s'il est impair.
+        int: Le reste de la division de nombre1 par nombre2
 
     Raises:
-        ValueError: En cas de division
+        ValueError: En cas de division par 0
     """
 
     if nombre1 == 0:
